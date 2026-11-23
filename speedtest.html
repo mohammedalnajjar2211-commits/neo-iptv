@@ -14,8 +14,8 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --red:#d40000;
-  --red-light:#ff2d2d;
+  --red:#d4a017;
+  --red-light:#ffd76a;
   --bg:#050505;
   --card:#101010;
   --card2:#151515;
@@ -29,8 +29,8 @@ html{scroll-behavior:smooth}
 body{
   font-family:'Cairo',sans-serif;
   background:
-    radial-gradient(circle at 50% 0%,rgba(212,0,0,.18),transparent 35%),
-    radial-gradient(circle at 0% 100%,rgba(212,0,0,.08),transparent 30%),
+    radial-gradient(circle at 50% 0%,rgba(212,160,23,.18),transparent 35%),
+    radial-gradient(circle at 0% 100%,rgba(212,160,23,.08),transparent 30%),
     var(--bg);
   color:var(--text);
   min-height:100vh;
@@ -64,7 +64,7 @@ header{
   width:48px;height:48px;border-radius:15px;
   background:linear-gradient(145deg,var(--red-light),var(--red));
   display:grid;place-items:center;
-  box-shadow:0 0 30px rgba(212,0,0,.35);
+  box-shadow:0 0 30px rgba(212,160,23,.35);
   font-size:24px;font-weight:900;
 }
 .logo-text{font-size:27px;font-weight:900;letter-spacing:.3px}
@@ -74,7 +74,7 @@ header{
 .badge{
   display:inline-flex;align-items:center;gap:8px;
   padding:7px 16px;border:1px solid rgba(255,45,45,.3);
-  background:rgba(212,0,0,.08);border-radius:50px;
+  background:rgba(212,160,23,.08);border-radius:50px;
   color:#ff7070;font-size:13px;font-weight:700;
 }
 .badge i{width:8px;height:8px;border-radius:50%;background:var(--red-light);box-shadow:0 0 12px var(--red-light)}
@@ -89,7 +89,7 @@ h1 span{color:var(--red-light)}
   border:1px solid var(--border);
   border-radius:28px;
   padding:32px;
-  box-shadow:0 25px 80px rgba(0,0,0,.45),0 0 50px rgba(212,0,0,.05);
+  box-shadow:0 25px 80px rgba(0,0,0,.45),0 0 50px rgba(212,160,23,.05);
   backdrop-filter:blur(15px);
 }
 
@@ -101,7 +101,7 @@ h1 span{color:var(--red-light)}
   padding:12px;
   background:conic-gradient(var(--red-light) 0deg,var(--red) 0deg,#272727 0deg);
   transition:background 1s linear;
-  box-shadow:0 0 50px rgba(212,0,0,.13);
+  box-shadow:0 0 50px rgba(212,160,23,.13);
   position:relative;
 }
 .speedometer:before{
@@ -134,9 +134,9 @@ h1 span{color:var(--red-light)}
 }
 .start-btn{
   color:#fff;background:linear-gradient(135deg,var(--red-light),var(--red));
-  box-shadow:0 12px 30px rgba(212,0,0,.25);
+  box-shadow:0 12px 30px rgba(212,160,23,.25);
 }
-.start-btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(212,0,0,.4)}
+.start-btn:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(212,160,23,.4)}
 .start-btn:disabled{opacity:.65;cursor:not-allowed;transform:none}
 .results{
   display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px
@@ -156,7 +156,7 @@ h1 span{color:var(--red-light)}
 .message.show{display:block}
 .message.good{background:rgba(34,197,94,.07);border-color:rgba(34,197,94,.35)}
 .message.medium{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.35)}
-.message.bad{background:rgba(212,0,0,.08);border-color:rgba(255,45,45,.35)}
+.message.bad{background:rgba(212,160,23,.08);border-color:rgba(255,45,45,.35)}
 .message-title{font-size:20px;font-weight:900;margin-bottom:7px}
 .message-text{font-size:14px;line-height:2;color:#cfcfcf}
 .good .message-title{color:var(--green)}
@@ -189,7 +189,7 @@ footer{
 footer strong{color:#aaa}
 
 @keyframes show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-@keyframes pulse{0%,100%{box-shadow:0 0 25px rgba(212,0,0,.15)}50%{box-shadow:0 0 55px rgba(212,0,0,.3)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 25px rgba(212,160,23,.15)}50%{box-shadow:0 0 55px rgba(212,160,23,.3)}}
 .testing{animation:pulse 1.5s infinite}
 @media(max-width:650px){
   .test-card{padding:22px 15px;border-radius:22px}
@@ -319,7 +319,7 @@ function setSpeed(value){
   // visual scale: 0–100 Mbps
   const deg = Math.min(safe,100) / 100 * 360;
   speedometer.style.background =
-    `conic-gradient(#ff2d2d ${deg}deg,#272727 ${deg}deg)`;
+    `conic-gradient(#ffd76a ${deg}deg,#272727 ${deg}deg)`;
 }
 
 function showMessage(speed){
