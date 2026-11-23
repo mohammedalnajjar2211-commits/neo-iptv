@@ -1,0 +1,74 @@
+:root {
+  --neo-black: #080808;
+  --neo-dark: #181818;
+  --neo-gold: #D4A017;
+  --neo-gold-light: #FFD76A;
+  --neo-gold-dark: #B8860B;
+  --neo-border: #E9D9B3;
+}
+
+/* Main headings */
+:is(h1,h2,h3,h4) {
+  --neo-heading-accent: #B8860B;
+}
+
+/* Primary buttons */
+.btn:not(.btn-outline),
+button.btn:not(.btn-outline),
+.product-buttons a:last-child,
+.featured-products-all {
+  background: linear-gradient(
+    120deg,
+    #B8860B,
+    #FFD76A 52%,
+    #C58A12
+  ) !important;
+  color: #101010 !important;
+  border-color: #D4A017 !important;
+}
+
+/* Secondary buttons */
+.btn-outline {
+  border-color: #D4A017 !important;
+  color: #B8860B !important;
+}
+
+/* TV frame */
+.tv-shell,
+.family-tv {
+  border-color: #D4A017 !important;
+  box-shadow:
+    0 0 0 2px #B8860B,
+    0 0 24px rgba(212,160,23,.35) !important;
+}
+
+/* Product cards */
+.product-card {
+  border-color: #E9D9B3 !important;
+}
+
+.product-card:hover {
+  border-color: #D4A017 !important;
+}
+
+/* Main section headings */
+section h2,
+section h3 {
+  color: #B8860B;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(
+    135deg,
+    #050505,
+    #202020
+  ) !important;
+}
+
+/* Preserve status colors */
+[role="status"],
+.success,
+.error {
+  background-image: none;
+}
