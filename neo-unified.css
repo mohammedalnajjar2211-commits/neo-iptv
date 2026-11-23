@@ -131,3 +131,16 @@ footer {
 }
 
 /* NEO-COLOR-CLEANUP-END */
+
+/* NEO WEATHER BAR - BLACK & GOLD */
+html body .nasa-weather-bar,
+html body div.nasa-weather-bar {
+    background: linear-gradient(90deg,#050505,#202020) !important;
+    background-image: linear-gradient(90deg,#050505,#202020) !important;
+    border-bottom: 1px solid #D4A017 !important;
+}
+
+html body .nasa-weather-bar .nasa-weather-inner {
+    background: transparent !important;
+}
+
