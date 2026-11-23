@@ -1,0 +1,115 @@
+﻿:root {
+  --primary: #D99A13;
+  --primary-dark: #A66B05;
+  --primary-light: #FFE18A;
+  --accent: #D99A13;
+  --neo-black: #08090B;
+  --neo-dark: #15171B;
+  --neo-gold: linear-gradient(135deg,#A66B05,#FFD76A,#C58A12);
+}
+
+/* Header and navigation */
+.header,
+.nav-wrap {
+  background: linear-gradient(110deg,#050505,#151515,#242424) !important;
+}
+
+.header .nav a,
+.header .brand,
+.header .menu-toggle {
+  color: #FFFFFF !important;
+}
+
+.header .nav a:hover {
+  color: #FFD76A !important;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg,#050505,#171717,#080808) !important;
+}
+
+.hero-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.82),
+    rgba(12,12,12,.72),
+    rgba(0,0,0,.65)
+  ) !important;
+}
+
+.hero .eyebrow {
+  color: #FFD76A !important;
+}
+
+/* Buttons */
+.btn:not(.btn-outline),
+.sports-cta,
+.featured-products-all {
+  background: linear-gradient(
+    135deg,
+    #A66B05 0%,
+    #E9AD26 45%,
+    #FFD76A 65%,
+    #B67A08 100%
+  ) !important;
+  color: #111111 !important;
+  border-color: #C58A12 !important;
+  box-shadow: 0 5px 20px rgba(212,153,27,.20) !important;
+}
+
+.btn:not(.btn-outline):hover,
+.sports-cta:hover {
+  filter: brightness(1.12);
+  box-shadow: 0 8px 28px rgba(212,153,27,.35) !important;
+}
+
+.btn-outline {
+  border-color: #C58A12 !important;
+  color: #D99A13 !important;
+}
+
+.btn-outline:hover {
+  background: #D99A13 !important;
+  color: #111111 !important;
+}
+
+/* TV frame - preserve original size */
+.tv-shell,
+.family-tv {
+  border-color: #C58A12 !important;
+  box-shadow:
+    0 0 0 2px rgba(215,160,42,.35),
+    0 0 35px rgba(215,160,42,.24),
+    0 20px 55px rgba(0,0,0,.45) !important;
+}
+
+/* General accents */
+.eyebrow,
+.product-price,
+.feature-icon {
+  color: #C58A12 !important;
+}
+
+.family-bestseller {
+  background: linear-gradient(135deg,#A66B05,#FFD76A) !important;
+  color: #111111 !important;
+}
+
+/* Inputs */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #D99A13 !important;
+  outline-color: #D99A13 !important;
+}
+
+/* Links */
+a:hover {
+  text-decoration-color: #D99A13;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #B98517;
+}
