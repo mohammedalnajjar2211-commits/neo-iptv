@@ -13,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root{
-      --red:#d40000;
-      --red2:#ff2d2d;
+      --red:#C58A12;
+      --red2:#D4A017;
       --dark:#090909;
       --card:#121212;
       --card2:#171717;
@@ -31,8 +31,8 @@
       margin:0;
       font-family:"Cairo",sans-serif;
       background:
-        radial-gradient(circle at 15% 0%, rgba(212,0,0,.19), transparent 30%),
-        radial-gradient(circle at 100% 35%, rgba(255,45,45,.09), transparent 26%),
+        radial-gradient(circle at 15% 0%, rgba(197,138,18,.19), transparent 30%),
+        radial-gradient(circle at 100% 35%, rgba(212,160,23,.09), transparent 26%),
         #080808;
       color:var(--text);
       min-height:100vh;
@@ -40,7 +40,7 @@
     a{color:inherit;text-decoration:none}
     button,input,textarea{font:inherit}
     .topbar{
-      background:linear-gradient(90deg,#8e0000,var(--red),#8e0000);
+      background:linear-gradient(90deg,#C58A12,var(--red),#C58A12);
       color:#fff;
       text-align:center;
       padding:8px 14px;
@@ -60,8 +60,8 @@
     .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:21px}
     .brand-mark{
       width:39px;height:39px;border-radius:12px;display:grid;place-items:center;
-      background:linear-gradient(135deg,var(--red2),#8c0000);
-      box-shadow:0 0 24px rgba(212,0,0,.35);
+      background:linear-gradient(135deg,var(--red2),#C58A12);
+      box-shadow:0 0 24px rgba(197,138,18,.35);
       font-weight:900;
     }
     .back{
@@ -86,8 +86,8 @@
     .card + .card{margin-top:18px}
     .title{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:900;margin:0 0 17px}
     .dot{
-      width:31px;height:31px;border-radius:10px;background:rgba(212,0,0,.15);
-      color:#ff5b5b;display:grid;place-items:center;font-size:15px
+      width:31px;height:31px;border-radius:10px;background:rgba(197,138,18,.15);
+      color:#D4A017;display:grid;place-items:center;font-size:15px
     }
     .order-row{
       display:flex;justify-content:space-between;gap:12px;padding:12px 0;
@@ -102,8 +102,8 @@
     }
     .amount-box{
       margin-top:15px;padding:17px;border-radius:16px;text-align:center;
-      background:linear-gradient(135deg,rgba(212,0,0,.16),rgba(255,45,45,.05));
-      border:1px solid rgba(255,45,45,.22)
+      background:linear-gradient(135deg,rgba(197,138,18,.16),rgba(212,160,23,.05));
+      border:1px solid rgba(212,160,23,.22)
     }
     .amount-box small{color:#aaa;display:block}
     .amount-box b{display:block;font-size:28px;color:#fff;margin-top:4px}
@@ -120,12 +120,12 @@
     }
     .plan:hover{border-color:#555;transform:translateY(-1px)}
     .plan.active{
-      border-color:var(--red2);background:linear-gradient(145deg,rgba(212,0,0,.18),#111);
-      box-shadow:0 0 0 2px rgba(212,0,0,.08)
+      border-color:var(--red2);background:linear-gradient(145deg,rgba(197,138,18,.18),#111);
+      box-shadow:0 0 0 2px rgba(197,138,18,.08)
     }
     .plan input{position:absolute;opacity:0}
     .plan-badge{
-      position:absolute;top:-9px;right:12px;background:linear-gradient(90deg,#b00000,var(--red2));
+      position:absolute;top:-9px;right:12px;background:linear-gradient(90deg,#C58A12,var(--red2));
       color:#fff;border-radius:999px;padding:3px 8px;font-size:9px;font-weight:900
     }
     .plan-title{font-size:13px;font-weight:900}
@@ -139,8 +139,8 @@
     }
     .method:hover{border-color:#555;transform:translateY(-1px)}
     .method.active{
-      border-color:var(--red2);background:linear-gradient(145deg,rgba(212,0,0,.17),#111);
-      box-shadow:0 0 0 2px rgba(212,0,0,.08)
+      border-color:var(--red2);background:linear-gradient(145deg,rgba(197,138,18,.17),#111);
+      box-shadow:0 0 0 2px rgba(197,138,18,.08)
     }
     .method input{position:absolute;opacity:0}
     .method-icon{
@@ -180,7 +180,7 @@
       margin-top:16px;border:1.5px dashed #3a3a3a;border-radius:16px;padding:18px;text-align:center;
       background:#0d0d0d;transition:.2s
     }
-    .upload.drag{border-color:var(--red2);background:rgba(212,0,0,.05)}
+    .upload.drag{border-color:var(--red2);background:rgba(197,138,18,.05)}
     .upload input{display:none}
     .upload label{display:block;cursor:pointer}
     .upload-icon{font-size:27px}
@@ -195,8 +195,8 @@
     .full{grid-column:1/-1}
     .submit{
       width:100%;border:0;border-radius:14px;padding:14px 18px;margin-top:16px;
-      background:linear-gradient(90deg,#b00000,var(--red2));color:#fff;font-weight:900;
-      cursor:pointer;box-shadow:0 10px 26px rgba(212,0,0,.24);transition:.2s
+      background:linear-gradient(90deg,#C58A12,var(--red2));color:#fff;font-weight:900;
+      cursor:pointer;box-shadow:0 10px 26px rgba(197,138,18,.24);transition:.2s
     }
     .submit:hover{transform:translateY(-1px);filter:brightness(1.07)}
     .secure{text-align:center;color:#7d7d7d;font-size:10px;margin-top:10px}
@@ -228,7 +228,7 @@
       .hero h1{font-size:29px}
     }
   </style>
-<link rel="stylesheet" href="/family-font.css?v=1"><link rel="stylesheet" href="/neo-theme.css?v=1"><link rel="stylesheet" href="/neo-gold-final.css?v=1"><link rel="stylesheet" href="/neo-unified.css?v=3"></head>
+<link rel="stylesheet" href="/family-font.css?v=1"><link rel="stylesheet" href="/neo-theme.css?v=1"><link rel="stylesheet" href="/neo-gold-final.css?v=1"><link rel="stylesheet" href="/neo-unified.css?v=20261123"></head>
 <body>
   <div class="topbar">🇮🇶 هذه الصفحة مخصصة للدفع داخل العراق فقط</div>
 

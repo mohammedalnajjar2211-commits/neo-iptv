@@ -144,3 +144,35 @@ html body .nasa-weather-bar .nasa-weather-inner {
     background: transparent !important;
 }
 
+
+
+/* NEO 4K PRO — final consistent black-and-gold theme */
+html body .nasa-weather-bar {
+  background:linear-gradient(90deg,#080808,#242424)!important;
+  border-bottom:1px solid #B8860B!important;
+}
+html body .cta {
+  background:linear-gradient(120deg,#090909,#252525 65%,#59420D)!important;
+}
+html body .features {
+  background:#FFF9F0!important;
+}
+html body .feature {
+  border-color:#E8D8B8!important;
+}
+html body .feature-icon {
+  background:linear-gradient(145deg,#FFD76A,#B8860B)!important;
+  color:#171717!important;
+}
+html body .hero-actions .btn:not(.btn-outline) {
+  background:linear-gradient(120deg,#A66B05,#FFD76A 52%,#C58A12)!important;
+  color:#101010!important;
+  border-color:#D4A017!important;
+}
+html body .tv-shell.family-tv {
+  background:linear-gradient(145deg,#080808,#1B1B1B)!important;
+}
+html body .btn.btn-outline {
+  color:#A66B05!important;
+  border-color:#D4A017!important;
+}
