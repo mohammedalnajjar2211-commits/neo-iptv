@@ -72,3 +72,22 @@ footer {
 .error {
   background-image: none;
 }
+/* NEO IPTV - FIX RED SECTION HEADINGS */
+.section h2,
+.section h3,
+.section .page-title,
+.section .eyebrow,
+.section-title,
+.page-title,
+.product-price {
+    color: #B8860B !important;
+}
+
+/* Keep dark hero headings white */
+.hero h1,
+.hero h2,
+.family-apps-hero h1,
+.speed-hero h1 {
+    color: #FFFFFF !important;
+}
+
