@@ -1,0 +1,1194 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+:root{
+--red:#d40000;
+--red-light:#ff2d2d;
+--bg:#050505;
+--card:#101010;
+--border:#222;
+--text:#ffffff;
+--gray:#999;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+min-height:100vh;
+}
+
+/* خلفية متوهجة */
+
+body::before{
+content:"";
+position:fixed;
+top:-200px;
+right:-200px;
+width:500px;
+height:500px;
+background:radial-gradient(
+circle,
+rgba(212,0,0,.35),
+transparent 70%
+);
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-200px;
+left:-200px;
+width:500px;
+height:500px;
+background:radial-gradient(
+circle,
+rgba(212,0,0,.15),
+transparent 70%
+);
+z-index:-1;
+}
+
+/* Header */
+
+header{
+height:80px;
+width:92%;
+margin:20px auto;
+background:#111;
+border:1px solid rgba(255,255,255,.05);
+border-radius:18px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 25px;
+box-shadow:0 0 20px rgba(255,0,0,.08);
+}
+
+.logo{
+font-size:24px;
+font-weight:800;
+color:var(--red-light);
+}
+
+.menu-btn{
+background:none;
+border:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+}
+
+/* Sidebar */
+
+.sidebar{
+position:fixed;
+top:0;
+right:-320px;
+width:300px;
+height:100%;
+background:#0d0d0d;
+z-index:999;
+transition:.35s;
+border-left:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar.active{
+right:0;
+}
+
+.sidebar-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar-header h2{
+color:var(--red-light);
+}
+
+.sidebar-header button{
+background:none;
+border:none;
+font-size:24px;
+color:white;
+cursor:pointer;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar li{
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.sidebar a{
+display:block;
+padding:18px 25px;
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+.sidebar a:hover{
+background:rgba(255,0,0,.12);
+color:var(--red-light);
+}
+
+#overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.75);
+display:none;
+z-index:998;
+}
+
+#overlay.active{
+display:block;
+}
+
+/* Search */
+
+.search-section{
+width:92%;
+margin:auto;
+}
+
+.search-section input{
+width:100%;
+padding:16px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.08);
+background:#111;
+color:white;
+font-size:16px;
+outline:none;
+}
+
+.search-section input:focus{
+border-color:var(--red);
+}
+
+/* Hero */
+
+.hero{
+width:92%;
+margin:40px auto;
+padding:45px;
+text-align:center;
+background:linear-gradient(
+135deg,
+#111,
+#181818
+);
+border-radius:25px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.hero h1{
+font-size:38px;
+margin-bottom:15px;
+color:white;
+}
+
+.hero p{
+color:#bbb;
+font-size:18px;
+}
+
+/* Products */
+
+.products{
+width:92%;
+margin:40px auto;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:var(--card);
+border-radius:25px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:
+0 0 25px rgba(255,0,0,.25);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+margin-bottom:10px;
+}
+
+.card-content p{
+color:#aaa;
+margin-bottom:15px;
+}
+
+.price{
+font-size:28px;
+font-weight:800;
+color:var(--red-light);
+margin-bottom:18px;
+}
+
+/* Buttons */
+
+.order-btn{
+display:block;
+text-align:center;
+padding:14px;
+background:linear-gradient(
+90deg,
+#a00000,
+#ff0000
+);
+color:white;
+text-decoration:none;
+border-radius:14px;
+margin-top:10px;
+font-weight:700;
+}
+
+.details-btn{
+display:block;
+text-align:center;
+padding:12px;
+border:1px solid rgba(255,255,255,.08);
+color:white;
+text-decoration:none;
+border-radius:14px;
+margin-bottom:10px;
+}
+
+/* Features */
+
+.features{
+width:92%;
+margin:50px auto;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.feature{
+background:#101010;
+padding:25px;
+border-radius:20px;
+text-align:center;
+font-size:18px;
+border:1px solid rgba(255,255,255,.05);
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+padding:35px;
+text-align:center;
+color:#888;
+border-top:1px solid rgba(255,255,255,.05);
+}
+
+footer div{
+margin:8px 0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+padding:25px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.logo{
+font-size:20px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
+}
+
+.whatsapp-button{
+position:fixed;
+bottom:25px;
+right:25px;
+z-index:999999;
+
+display:block;
+
+text-decoration:none;
+
+transition:.3s;
+}
+
+.whatsapp-button:hover{
+transform:scale(1.1);
+}
+
+.whatsapp-button img{
+width:60px;
+height:60px;
+display:block;
+}
+
+
+
+/* صندوق الدفع */
+
+.payment-box{
+    width:92%;
+    max-width:900px;
+    margin:50px auto;
+    padding:30px;
+    background:#101010;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    text-align:center;
+    display:block;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.pay-card{
+    background:#d40000;
+    color:#fff;
+    padding:15px;
+    border-radius:12px;
+    font-weight:700;
+}
+
+.payment-note{
+    margin-top:20px;
+    color:#bbb;
+}
+
+
+
+.payment-box{
+    width:92%;
+    max-width:900px;
+    margin:50px auto;
+    border:4px dashed yellow !important;
+    background:rgba(255,255,0,.08);
+}
+
+/* آراء العملاء */
+
+.reviews-section{
+width:92%;
+max-width:1000px;
+margin:60px auto;
+}
+
+.reviews-section h2{
+text-align:center;
+font-size:32px;
+margin-bottom:30px;
+color:#fff;
+}
+
+.review-card{
+background:#151515;
+border:1px solid rgba(255,255,255,.05);
+border-radius:20px;
+padding:25px;
+margin-bottom:20px;
+transition:.3s;
+}
+
+.review-card:hover{
+transform:translateY(-3px);
+box-shadow:0 0 20px rgba(255,0,0,.15);
+}
+
+.review-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+.review-name{
+font-size:18px;
+font-weight:700;
+color:#fff;
+}
+
+.stars{
+color:#FFD700;
+font-size:18px;
+}
+
+.review-time{
+color:#999;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.review-text{
+color:#ddd;
+line-height:2;
+font-size:16px;
+}
+
+@media(max-width:768px){
+
+.review-header{
+flex-direction:column;
+gap:8px;
+align-items:flex-start;
+}
+
+.review-name{
+font-size:16px;
+}
+
+.review-text{
+font-size:15px;
+}
+
+}
+
+
+/* البانر الرئيسي */
+
+.top-banner{
+width:92%;
+margin:30px auto;
+background:#111;
+border-radius:25px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.banner-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:40px;
+gap:40px;
+}
+
+.banner-text{
+flex:1;
+text-align:right;
+}
+
+.banner-badge{
+display:inline-block;
+background:#d40000;
+color:#fff;
+padding:12px 25px;
+border-radius:50px;
+font-size:24px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.banner-text h2{
+font-size:36px;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.banner-text ul{
+list-style:none;
+}
+
+.banner-text li{
+margin:12px 0;
+font-size:20px;
+}
+
+.banner-image{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.banner-image img{
+width:100%;
+max-width:450px;
+height:auto;
+display:block;
+object-fit:contain;
+}
+
+@media(max-width:768px){
+
+.banner-content{
+flex-direction:column;
+padding:20px;
+text-align:center;
+}
+
+.banner-text{
+text-align:center;
+}
+
+.banner-text h2{
+font-size:24px;
+}
+
+.banner-text li{
+font-size:16px;
+}
+
+.banner-badge{
+font-size:20px;
+}
+
+}
+
+/* السعر */
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* مسافة بين السعرين */
+}
+
+.price .usd {
+    font-weight: bold;
+}
+
+.price .iqd {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+/* =========================
+   شعار الموقع مع التوثيق
+========================= */
+
+.logo {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    direction: rtl;
+
+    gap: 8px;
+
+    width: auto !important;
+
+    min-width: max-content;
+
+    max-width: none !important;
+
+    overflow: visible !important;
+
+    white-space: nowrap;
+
+    padding: 5px 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* اسم الموقع */
+
+.logo-name {
+    display: inline-block;
+
+    flex: 0 0 auto;
+
+    width: auto !important;
+
+    min-width: max-content;
+
+    max-width: none !important;
+
+    overflow: visible !important;
+
+    white-space: nowrap;
+
+    font-family: "Cairo", sans-serif;
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    letter-spacing: 0;
+
+    color: #ff2d2d;
+}
+
+
+/* شارة التوثيق */
+
+.verified-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex: 0 0 21px;
+
+    width: 21px;
+
+    height: 21px;
+
+    color: #1d9bf0;
+
+    overflow: visible;
+
+    filter:
+        drop-shadow(
+            0 0 5px
+            rgba(29, 155, 240, 0.45)
+        );
+}
+
+
+/* أيقونة التوثيق */
+
+.verified-badge svg {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+
+    .logo {
+        gap: 6px;
+
+        padding: 4px 5px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .verified-badge {
+        flex-basis: 18px;
+
+        width: 18px;
+
+        height: 18px;
+    }
+
+}
+
+
+
+
+
+.product-card{
+    position:relative;
+    max-width:400px;
+    margin:auto;
+    background:#111;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    transition:.35s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 45px rgba(212,0,0,.25);
+}
+
+.best-seller{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:linear-gradient(45deg,#d40000,#ff2d2d);
+    color:#fff;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+    z-index:5;
+    box-shadow:0 8px 20px rgba(212,0,0,.35);
+}
+
+.product-image{
+    aspect-ratio:1/1;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.05);
+}
+
+.product-content{
+    padding:18px;
+    text-align:center;
+}
+
+.product-content h2{
+    font-size:24px;
+    margin-bottom:6px;
+    color:#fff;
+}
+
+.sub-title{
+    color:#bbb;
+    font-size:15px;
+    margin-bottom:14px;
+}
+
+.features{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-bottom:15px;
+}
+
+.features div{
+    background:rgba(255,255,255,.05);
+    padding:10px;
+    border-radius:10px;
+    font-size:14px;
+}
+
+.price{
+    margin:18px 0;
+}
+
+.price-inline{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.usd{
+    font-size:38px;
+    font-weight:800;
+    color:#ff2d2d;
+}
+
+.old-price{
+    color:#fff;
+    font-size:22px;
+    text-decoration:line-through;
+    opacity:.75;
+}
+
+.discount{
+    background:#d40000;
+    color:#fff;
+    padding:3px 10px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.iqd{
+    display:block;
+    margin-top:6px;
+    color:#ddd;
+    font-size:17px;
+}
+
+.details-btn{
+    display:block;
+    padding:13px;
+    background:#1a1a1a;
+    border:1px solid rgba(255,255,255,.08);
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.details-btn:hover{
+    background:#222;
+}
+
+.order-btn{
+    display:block;
+    padding:15px;
+    background:linear-gradient(45deg,#d40000,#ff2d2d);
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:700;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    transform:translateY(-2px);
+}
+
+
+/* =========================
+   Family IPTV Social Icons
+========================= */
+
+.family-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto 15px;
+    direction: ltr;
+}
+
+.family-social-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 50%;
+
+    color: #d40000 !important;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.family-social-icon svg {
+    width: 27px;
+    height: 27px;
+
+    fill: #d40000;
+
+    transition: all 0.3s ease;
+}
+
+/* Instagram */
+.family-social-icon svg rect,
+.family-social-icon svg circle {
+    fill: none;
+    stroke: #d40000;
+    stroke-width: 1.8;
+}
+
+.family-social-icon svg .fill-dot {
+    fill: #d40000;
+    stroke: none;
+}
+
+/* باقي الأيقونات */
+.family-social-icon:nth-child(2) svg path,
+.family-social-icon:nth-child(3) svg path,
+.family-social-icon:nth-child(4) svg path {
+    fill: #d40000;
+    stroke: none;
+}
+
+/* Hover */
+.family-social-icon:hover {
+    background: transparent !important;
+    transform: translateY(-4px) scale(1.12);
+}
+
+.family-social-icon:hover svg {
+    fill: #ff2020;
+    filter: drop-shadow(0 0 7px rgba(212, 0, 0, 0.65));
+}
+
+.family-social-icon:hover svg rect,
+.family-social-icon:hover svg circle {
+    stroke: #ff2020;
+}
+
+.family-social-icon:hover svg .fill-dot {
+    fill: #ff2020;
+}
+
+/* الموبايل */
+@media (max-width: 600px) {
+    .family-social {
+        gap: 8px;
+    }
+
+    .family-social-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .family-social-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/* =========================
+   Legal Links Bar
+========================= */
+
+.legal-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    width: 100%;
+    margin: 20px 0 10px;
+    padding: 15px 10px;
+    border-top: 1px solid #222;
+}
+
+.legal-links a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: #ff2d2d;
+}
+
+.legal-links span {
+    color: #444;
+    font-size: 13px;
+}
+
+.copyright {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    padding: 5px 10px 20px;
+}
+
+/* الموبايل */
+@media (max-width: 600px) {
+    .legal-links {
+        gap: 7px;
+        padding: 12px 5px;
+    }
+
+    .legal-links a {
+        font-size: 11px;
+    }
+
+    .legal-links span {
+        font-size: 10px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }
+}
+
+/* =========================
+   Legal Links Bar
+========================= */
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero-section {
+    width: 100%;
+    max-width: 1665px;
+    margin: 45px auto 0;
+    padding: 65px 30px 38px;
+    text-align: center;
+
+    background: linear-gradient(
+        145deg,
+        rgba(20, 20, 20, 0.98),
+        rgba(14, 14, 14, 0.98)
+    );
+
+    border: 1px solid #292929;
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+}
+
+/* العنوان */
+
+.hero-section h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.hero-section h1:first-letter {
+    color: #ff2d2d;
+}
+
+/* الوصف */
+
+.hero-description {
+    margin: 18px auto 0;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ================================
+   زر تصفح الباقات
+================================ */
+
+.hero-packages-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin-top: 18px;
+
+    padding: 11px 22px;
+
+    min-width: 145px;
+
+    background: linear-gradient(
+        135deg,
+        #d40000,
+        #ff2424
+    );
+
+    color: #fff;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 20px rgba(212, 0, 0, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+/* Hover */
+
+.hero-packages-btn:hover {
+    transform: translateY(-2px);
+
+    background: linear-gradient(
+        135deg,
+        #ed0000,
+        #ff3535
+    );
+
+    box-shadow:
+        0 9px 28px rgba(212, 0, 0, 0.32);
+}
+
+/* السهم */
+
+.hero-btn-arrow {
+    font-size: 17px;
+    line-height: 1;
+
+    transition:
+        transform 0.25s ease;
+}
+
+.hero-packages-btn:hover .hero-btn-arrow {
+    transform: translateX(-4px);
+}
+
+
+/* ================================
+   Mobile
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        margin-top: 25px;
+        padding: 42px 18px 28px;
+        border-radius: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .hero-packages-btn {
+        margin-top: 15px;
+        padding: 10px 18px;
+        min-width: 135px;
+        font-size: 13px;
+    }
+}
+
