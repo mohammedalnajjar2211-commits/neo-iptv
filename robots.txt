@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /payment/
 Disallow: /nasa-payment-whatsapp/
-Sitemap: https://familyiptv.net/sitemap.xml
+Sitemap: https://neo-iptv.net/sitemap.xml

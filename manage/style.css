@@ -1,11 +1,11 @@
 :root{
-  --red:#d40000; --red2:#ff2d2d; --bg:#08090b; --card:#111318;
+  --red:#d69b1b; --red2:#f5c75b; --bg:#08090b; --card:#111318;
   --text:#fff; --muted:#9ca3af; --line:#262a31; --green:#27c274;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:"Cairo",sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
 .bg{position:fixed;inset:0;pointer-events:none;background:
-radial-gradient(circle at 10% 10%,rgba(212,0,0,.18),transparent 32%),
+radial-gradient(circle at 10% 10%,rgba(214,155,27,.18),transparent 32%),
 radial-gradient(circle at 90% 35%,rgba(255,45,45,.10),transparent 30%)}
 .topbar{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:18px max(20px,5vw);border-bottom:1px solid var(--line);background:rgba(8,9,11,.75);backdrop-filter:blur(16px)}
 .brand{display:flex;gap:8px;align-items:center;font-weight:800;letter-spacing:.4px}
@@ -19,7 +19,7 @@ label{display:block;margin:17px 0 7px;font-size:14px;color:#d6d7da}
 input{width:100%;background:#0a0c10;border:1px solid var(--line);border-radius:12px;color:#fff;padding:13px 14px;font-family:inherit;outline:none}
 input:focus{border-color:var(--red2);box-shadow:0 0 0 3px rgba(255,45,45,.09)}
 button{font-family:inherit;border:0;border-radius:12px;padding:11px 16px;font-weight:700;cursor:pointer}
-.primary{background:linear-gradient(135deg,var(--red2),var(--red));color:#fff;box-shadow:0 10px 30px rgba(212,0,0,.25)}
+.primary{background:linear-gradient(135deg,var(--red2),var(--red));color:#fff;box-shadow:0 10px 30px rgba(214,155,27,.25)}
 .login-card .primary{width:100%;margin-top:20px}
 .ghost{background:#171a20;color:#fff;border:1px solid var(--line)}
 .hidden{display:none!important}

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الدعم الفني | Family IPTV</title>
-<meta name="description" content="مركز الدعم الفني Family IPTV - حلول تلقائية لمشاكل الاشتراك والتطبيق والقنوات.">
+<title>الدعم الفني | Neo IPTV</title>
+<meta name="description" content="مركز الدعم الفني Neo IPTV - حلول تلقائية لمشاكل الاشتراك والتطبيق والقنوات.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -62,7 +62,7 @@ button{cursor:pointer}
  .issue{min-height:70px}
 }
 </style>
-<link rel="stylesheet" href="/family-font.css?v=1"></head>
+<link rel="stylesheet" href="/family-font.css?v=1"><link rel="stylesheet" href="/neo-theme.css?v=1"></head>
 <body>
 
 <header class="header">
@@ -107,7 +107,7 @@ button{cursor:pointer}
  </section>
 </main>
 
-<div class="footer">© 2026 <span>Family IPTV</span> — <span data-ar="مركز الدعم الفني" data-en="Technical Support Center">مركز الدعم الفني</span></div>
+<div class="footer">© 2026 <span>Neo IPTV</span> — <span data-ar="مركز الدعم الفني" data-en="Technical Support Center">مركز الدعم الفني</span></div>
 
 <script>
 const WA="9647809522129";
@@ -167,8 +167,8 @@ const issues=[
  {id:"other",icon:"❓",ar:"مشكلة أخرى",en:"Other problem",
   arSteps:["أعد تشغيل الجهاز والتطبيق.","تأكد من أن الإنترنت يعمل بشكل طبيعي.","دوّن رسالة الخطأ التي تظهر لك إن وجدت.","جهّز اسم التطبيق ونوع الجهاز واسم المستخدم للتواصل مع الدعم."],
   enSteps:["Restart the device and app.","Make sure the internet is working normally.","Note the exact error message if one appears.","Prepare the app name, device type and username before contacting support."],
-  arTip:"إذا لم تجد مشكلتك ضمن القائمة، تواصل مع دعم Family IPTV وسنساعدك.",
-  enTip:"If you cannot find your issue in the list, contact Family IPTV support and we will help you."}
+  arTip:"إذا لم تجد مشكلتك ضمن القائمة، تواصل مع دعم Neo IPTV وسنساعدك.",
+  enTip:"If you cannot find your issue in the list, contact Neo IPTV support and we will help you."}
 ];
 
 const cat=document.getElementById("categories");
@@ -194,7 +194,7 @@ function openIssue(i){
  const arr=lang==="ar"?x.arSteps:x.enSteps;
  document.getElementById("steps").innerHTML=arr.map((s,n)=>`<div class="step"><div class="num">${n+1}</div><p>${s}</p></div>`).join("");
  document.getElementById("tip").textContent=lang==="ar"?x.arTip:x.enTip;
- document.getElementById("wa").href=`https://wa.me/${WA}?text=${encodeURIComponent(lang==="ar"?"مرحباً Family IPTV، أحتاج مساعدة بخصوص الاشتراك.":"Hello Family IPTV, I need help with my subscription.")}`;
+ document.getElementById("wa").href=`https://wa.me/${WA}?text=${encodeURIComponent(lang==="ar"?"مرحباً Neo IPTV، أحتاج مساعدة بخصوص الاشتراك.":"Hello Neo IPTV, I need help with my subscription.")}`;
  window.scrollTo({top:0,behavior:"smooth"});
 }
 function closePanel(){

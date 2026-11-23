@@ -1,0 +1,11 @@
+/* Neo IPTV: visual branding only; original layout remains intact. */
+:root{--red:#d49a1c;--red-light:#f3c65b;--primary:#d49a1c;--accent:#d49a1c;--neo-gold:#dca62b;--neo-dark:#101010}
+html{color-scheme:light}
+body{--neo-button:linear-gradient(120deg,#a56b08 0%,#e3ad30 48%,#ffd875 75%,#b87a0a 100%)}
+header,.site-header,.topbar,.header,.main-header,.navbar,.nav-header{background:linear-gradient(115deg,#080808,#1b1b1b 60%,#282828)!important}
+header a,.site-header a,.topbar a,.header a,.main-header a,.navbar a{color:#f8f5ed}
+header .family-official-logo,.family-official-logo{object-fit:contain;max-width:190px;max-height:85px}
+.hero,.hero-section,.page-hero,.page-banner{background-image:linear-gradient(115deg,#080808,#1b1b1b 55%,#292929)!important}
+button[type=submit],.btn-primary,.primary-btn,.hero-cta,.sports-cta,.cta-primary,.whatsapp-btn,.btn-buy,.buy-button{background:var(--neo-button)!important;color:#18130b!important;border-color:#d8a42c!important}
+button[type=submit]:hover,.btn-primary:hover,.primary-btn:hover,.sports-cta:hover{filter:brightness(1.08)}
+:focus-visible{outline:2px solid #dba32a;outline-offset:2px}

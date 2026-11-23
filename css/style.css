@@ -6,8 +6,8 @@ font-family:'Cairo',sans-serif;
 }
 
 :root{
---red:#d40000;
---red-light:#ff2d2d;
+--red:#d69b1b;
+--red-light:#f5c75b;
 --bg:#050505;
 --card:#101010;
 --border:#222;
@@ -33,7 +33,7 @@ width:500px;
 height:500px;
 background:radial-gradient(
 circle,
-rgba(212,0,0,.35),
+rgba(214,155,27,.35),
 transparent 70%
 );
 z-index:-1;
@@ -48,7 +48,7 @@ width:500px;
 height:500px;
 background:radial-gradient(
 circle,
-rgba(212,0,0,.15),
+rgba(214,155,27,.15),
 transparent 70%
 );
 z-index:-1;
@@ -391,7 +391,7 @@ display:block;
 }
 
 .pay-card{
-    background:#d40000;
+    background:#d69b1b;
     color:#fff;
     padding:15px;
     border-radius:12px;
@@ -517,7 +517,7 @@ text-align:right;
 
 .banner-badge{
 display:inline-block;
-background:#d40000;
+background:#d69b1b;
 color:#fff;
 padding:12px 25px;
 border-radius:50px;
@@ -660,7 +660,7 @@ font-size:20px;
 
     letter-spacing: 0;
 
-    color: #ff2d2d;
+    color: #f5c75b;
 }
 
 
@@ -741,21 +741,21 @@ font-size:20px;
 
 .product-card:hover{
     transform:translateY(-6px);
-    box-shadow:0 20px 45px rgba(212,0,0,.25);
+    box-shadow:0 20px 45px rgba(214,155,27,.25);
 }
 
 .best-seller{
     position:absolute;
     top:15px;
     left:15px;
-    background:linear-gradient(45deg,#d40000,#ff2d2d);
+    background:linear-gradient(45deg,#d69b1b,#f5c75b);
     color:#fff;
     padding:8px 16px;
     border-radius:30px;
     font-size:13px;
     font-weight:700;
     z-index:5;
-    box-shadow:0 8px 20px rgba(212,0,0,.35);
+    box-shadow:0 8px 20px rgba(214,155,27,.35);
 }
 
 .product-image{
@@ -819,7 +819,7 @@ font-size:20px;
 .usd{
     font-size:38px;
     font-weight:800;
-    color:#ff2d2d;
+    color:#f5c75b;
 }
 
 .old-price{
@@ -830,7 +830,7 @@ font-size:20px;
 }
 
 .discount{
-    background:#d40000;
+    background:#d69b1b;
     color:#fff;
     padding:3px 10px;
     border-radius:20px;
@@ -864,7 +864,7 @@ font-size:20px;
 .order-btn{
     display:block;
     padding:15px;
-    background:linear-gradient(45deg,#d40000,#ff2d2d);
+    background:linear-gradient(45deg,#d69b1b,#f5c75b);
     color:#fff;
     text-decoration:none;
     font-size:17px;
@@ -903,7 +903,7 @@ font-size:20px;
     border: none !important;
     border-radius: 50%;
 
-    color: #d40000 !important;
+    color: #d69b1b !important;
 
     text-decoration: none;
     transition: all 0.3s ease;
@@ -913,7 +913,7 @@ font-size:20px;
     width: 27px;
     height: 27px;
 
-    fill: #d40000;
+    fill: #d69b1b;
 
     transition: all 0.3s ease;
 }
@@ -922,12 +922,12 @@ font-size:20px;
 .family-social-icon svg rect,
 .family-social-icon svg circle {
     fill: none;
-    stroke: #d40000;
+    stroke: #d69b1b;
     stroke-width: 1.8;
 }
 
 .family-social-icon svg .fill-dot {
-    fill: #d40000;
+    fill: #d69b1b;
     stroke: none;
 }
 
@@ -935,7 +935,7 @@ font-size:20px;
 .family-social-icon:nth-child(2) svg path,
 .family-social-icon:nth-child(3) svg path,
 .family-social-icon:nth-child(4) svg path {
-    fill: #d40000;
+    fill: #d69b1b;
     stroke: none;
 }
 
@@ -1003,7 +1003,7 @@ font-size:20px;
 }
 
 .legal-links a:hover {
-    color: #ff2d2d;
+    color: #f5c75b;
 }
 
 .legal-links span {
@@ -1078,7 +1078,7 @@ font-size:20px;
 }
 
 .hero-section h1:first-letter {
-    color: #ff2d2d;
+    color: #f5c75b;
 }
 
 /* الوصف */
@@ -1109,7 +1109,7 @@ font-size:20px;
 
     background: linear-gradient(
         135deg,
-        #d40000,
+        #d69b1b,
         #ff2424
     );
 

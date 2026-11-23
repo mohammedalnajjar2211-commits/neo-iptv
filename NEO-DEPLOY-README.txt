@@ -1,0 +1,1 @@
+Neo IPTV branded GitHub Pages output. Review legacy service URLs, payment details and API endpoints before production. Source: Family IPTV deployment snapshot. To deploy: copy all files into C:\Projects\neo-iptv except .git; git add -A; git commit; git push.
