@@ -91,3 +91,43 @@ footer {
     color: #FFFFFF !important;
 }
 
+/* NEO-COLOR-CLEANUP-START */
+
+/* Weather bar */
+.nasa-weather-bar {
+    background: linear-gradient(90deg,#080808,#242424) !important;
+    border-bottom: 1px solid #B8860B !important;
+}
+
+/* Hero subscription button */
+.hero .btn:not(.btn-outline),
+.hero-actions .btn:not(.btn-outline) {
+    background: linear-gradient(120deg,#A66B05,#FFD76A 52%,#C58A12) !important;
+    border-color: #D4A017 !important;
+    color: #101010 !important;
+}
+
+/* TV frame */
+.tv-shell.family-tv {
+    background: linear-gradient(145deg,#080808,#1A1A1A) !important;
+    border-color: #D4A017 !important;
+}
+
+/* Feature icons */
+.feature-icon {
+    background: linear-gradient(145deg,#FFD76A,#B8860B) !important;
+    color: #101010 !important;
+}
+
+/* Product details buttons */
+.btn.btn-outline {
+    color: #B8860B !important;
+    border-color: #D4A017 !important;
+}
+
+.btn.btn-outline:hover {
+    background: #D4A017 !important;
+    color: #101010 !important;
+}
+
+/* NEO-COLOR-CLEANUP-END */
